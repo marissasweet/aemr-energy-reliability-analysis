@@ -60,6 +60,32 @@ Analyzed forced-outage causes to identify operational issues responsible for dis
 
 Compared priority participants across years to identify improving and worsening patterns.
 
+## Project Highlights
+
+### Forced Outages Became the Primary Reliability Concern
+
+Forced outages increased from 1,264 events in 2016 to 1,622 in 2017, an increase of approximately 28%. Their share of all approved outages rose from 65.46% to 74.71%, while every other outage category declined.
+
+![Forced Outage Overview](images/forced-outage-overview.png)
+
+### Reliability Risk Varied by Participant
+
+Participant-level analysis showed different forms of reliability risk. AURICON and GW experienced the highest forced-outage frequency, while MELK combined frequent events with a comparatively long average outage duration.
+
+![Participant Risk](images/participant-risk.png)
+
+### Forced Energy Loss Was Highly Concentrated
+
+GW, AURICON, and MELK together accounted for 60.06% of all forced-outage energy loss, exceeding the combined impact of every other participant.
+
+![Energy Loss Concentration](images/energy-loss-concentration.png)
+
+### A Small Number of Causes Drove Disproportionate Impact
+
+GW's recurring operational issues generated 28,688 MW of energy loss, nearly five times the impact of AURICON's full-unit trips, the next-largest identified forced-outage cause.
+
+![Leading Forced-Outage Causes](images/leading-outage-causes.png)
+
 ## Key Findings
 
 - Forced outages increased from **1,264 events in 2016 to 1,622 in 2017**, an increase of approximately **28%**.
