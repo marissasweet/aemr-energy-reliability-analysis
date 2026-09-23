@@ -84,7 +84,7 @@ GW, AURICON, and MELK together accounted for 60.06% of all forced-outage energy 
 
 GW's recurring operational issues generated 28,688 MW of energy loss, nearly five times the impact of AURICON's full-unit trips, the next-largest identified forced-outage cause.
 
-![Leading Forced-Outage Causes](images/leading-outage-causes.png)
+![Leading Forced-Outage Causes](images/facility-severity.png)
 
 ## Key Findings
 
