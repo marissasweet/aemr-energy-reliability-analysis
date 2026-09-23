@@ -6,11 +6,9 @@ This project analyzes approved electricity-market outage events to identify reli
 
 SQL was used to explore and summarize the underlying outage data, while Tableau was used to build an interactive stakeholder-focused story highlighting the most consequential findings and recommended actions.
 
-## Business Problem
+## Project Objective
 
-Energy-market regulators need to understand where reliability risk is concentrated so that monitoring and intervention can be directed toward the participants, facilities, and outage causes creating the greatest operational impact.
-
-The analysis focuses on approved outage events from 2016 and 2017, with particular attention to unplanned forced outages.
+Identify where outage reliability risk was most concentrated and determine which participants, facilities, and recurring causes should receive the greatest monitoring and intervention priority.
 
 ## Business Questions
 
@@ -29,6 +27,8 @@ This project explores several questions:
 - Tableau
 - Data cleaning and transformation
 - Exploratory data analysis
+- Aggregation and CTEs
+- CASE expressions and window functions
 - Calculated fields
 - Dashboard development
 - Data visualization
@@ -86,15 +86,13 @@ GW's recurring operational issues generated 28,688 MW of energy loss, nearly fiv
 
 ![Leading Forced-Outage Causes](images/facility-severity.png)
 
-## Key Findings
+## Key Insights
 
-- Forced outages increased from **1,264 events in 2016 to 1,622 in 2017**, an increase of approximately **28%**.
-- Forced outages represented approximately **65% of approved outages in 2016** and nearly **75% in 2017**.
-- **GW, AURICON, and MELK accounted for approximately 60% of forced energy loss**, indicating that reliability risk was highly concentrated.
-- GW recorded approximately **35,078 MW** of forced energy loss, followed by AURICON at approximately **32,336 MW** and MELK at approximately **24,056 MW**.
-- AURICON's forced energy loss increased from approximately **10,696 MW to 21,640 MW**, an increase of roughly **102%**.
-- GW's recurring operational issues accounted for approximately **28,688 MW** of energy loss, substantially more than any other identified cause.
-- MELK showed declining total energy loss year over year, but individual facility severity remained important to monitor.
+- Forced outages became a larger reliability concern between 2016 and 2017.
+- Reliability risk was highly concentrated rather than evenly distributed across participants.
+- GW, AURICON, and MELK accounted for 60.06% of forced-outage energy loss.
+- Participant risk reflected different combinations of outage frequency and duration.
+- Recurring operational causes created disproportionate energy-loss impact.
 
 ## Recommended Actions
 
@@ -107,7 +105,7 @@ Based on the analysis:
 
 ## Tableau Story
 
-[View the interactive AEMR Energy Reliability Analysis on Tableau Public](https://public.tableau.com/app/profile/marissa.sweet/viz/AEMREnergyReliabilityAnalysis/AEMREnergyReliabilityAnalysis?publish=yes)
+[View the interactive AEMR Energy Reliability Analysis on Tableau Public](https://public.tableau.com/views/AEMREnergyReliabilityAnalysis/AEMREnergyReliabilityAnalysis?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 The Tableau Story presents the analysis as a stakeholder-focused narrative, moving from the business problem through outage trends, participant and facility risk, energy-loss concentration, recurring causes, and recommended actions.
 
@@ -126,8 +124,14 @@ The Tableau Story presents the analysis as a stakeholder-focused narrative, movi
 
 ## Project Files
 
-Additional SQL files and selected Tableau visuals are included in this repository.
+- **SQL Analysis:** [`sql/aemr-analysis.sql`](sql/aemr-analysis.sql)  
+  Contains the SQL queries used to analyze outage trends, participant risk, outage duration, facility severity, energy-loss concentration, and recurring outage causes.
 
+- **Interactive Tableau Story:** [View on Tableau Public](https://public.tableau.com/views/AEMREnergyReliabilityAnalysis/AEMREnergyReliabilityAnalysis?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
+  Presents the analysis as a stakeholder-focused story with findings and recommended actions.
+
+- **Project Visuals:** `images/`  
+  Contains selected Tableau dashboards highlighting the primary findings.
 ## About This Project
 
 This project was completed as part of my Data Analytics Career Program coursework and was adapted for portfolio presentation to highlight my SQL, Tableau, analytical reasoning, and stakeholder communication skills.
